@@ -1,24 +1,27 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This README would document the important steps made throughout the course.
 
-Things you may want to cover:
+## Installing RSpec and Capybara
 
-* Ruby version
+This on is simple. Add these ones to your Gemfile:
 
-* System dependencies
+```ruby
+gem 'rspec-rails', '3.1.0'
+gem 'capybara', '2.7.1'
+```
 
-* Configuration
+The course didn't explained, why we have to use these specific versions.
+ 
+Then install RSpec for the application with
 
-* Database creation
+```
+rails g rspec:install
+```
 
-* Database initialization
+and create a stub for RSpec running
 
-* How to run the test suite
+```
+bundle binstubs rspec-core
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
